@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Nav": {
+      "type": "component",
+      "component": "navlink.navbar-link",
+      "repeatable": true
+    },
+    "cta_label": {
+      "type": "string"
+    },
+    "cta_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

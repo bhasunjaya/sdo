@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "sdo2024s",
+  "info": {
+    "singularName": "sdo2024",
+    "pluralName": "sdo2024s",
+    "displayName": "sdo2024"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "type": "component",
+      "component": "header.header",
+      "repeatable": false
+    },
+    "Hero": {
+      "type": "component",
+      "component": "hero.hero",
+      "repeatable": false
+    },
+    "date": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "Blocks": {
+      "type": "component",
+      "component": "block.blocks",
+      "repeatable": true
+    },
+    "Footer": {
+      "type": "component",
+      "component": "footer.footer",
+      "repeatable": false
+    },
+    "address": {
+      "type": "component",
+      "component": "address.address",
+      "repeatable": true
+    }
+  }
+}

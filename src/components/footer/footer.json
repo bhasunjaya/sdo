@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_footer_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SocialMedia": {
+      "type": "component",
+      "component": "socmed.social-media",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
