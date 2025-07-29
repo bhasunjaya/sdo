@@ -68,6 +68,18 @@ export interface HeroHero extends Struct.ComponentSchema {
   };
 }
 
+export interface KabupatenKabupaten extends Struct.ComponentSchema {
+  collectionName: 'components_kabupaten_kabupatens';
+  info: {
+    displayName: 'Kabupaten';
+  };
+  attributes: {
+    content: Schema.Attribute.Text;
+    cover: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface NavlinkNavbarLink extends Struct.ComponentSchema {
   collectionName: 'components_navlink_navbar_links';
   info: {
@@ -99,6 +111,7 @@ declare module '@strapi/strapi' {
       'footer.footer': FooterFooter;
       'header.header': HeaderHeader;
       'hero.hero': HeroHero;
+      'kabupaten.kabupaten': KabupatenKabupaten;
       'navlink.navbar-link': NavlinkNavbarLink;
       'socmed.social-media': SocmedSocialMedia;
     }

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_kabupaten_kabupatens",
+  "info": {
+    "displayName": "Kabupaten"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

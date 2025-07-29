@@ -430,6 +430,7 @@ export interface ApiSdo2024Sdo2024 extends Struct.SingleTypeSchema {
     Footer: Schema.Attribute.Component<'footer.footer', false>;
     Header: Schema.Attribute.Component<'header.header', false>;
     Hero: Schema.Attribute.Component<'hero.hero', false>;
+    Kabupaten: Schema.Attribute.Component<'kabupaten.kabupaten', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -439,6 +440,38 @@ export interface ApiSdo2024Sdo2024 extends Struct.SingleTypeSchema {
     place: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     time: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSdo2025Sdo2025 extends Struct.SingleTypeSchema {
+  collectionName: 'sdo2025s';
+  info: {
+    displayName: 'sdo2025';
+    pluralName: 'sdo2025s';
+    singularName: 'sdo2025';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Blocks: Schema.Attribute.Component<'block.blocks', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Footer: Schema.Attribute.Component<'footer.footer', false>;
+    Header: Schema.Attribute.Component<'header.header', false>;
+    Hero: Schema.Attribute.Component<'hero.hero', false>;
+    Kabupaten: Schema.Attribute.Component<'block.blocks', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sdo2025.sdo2025'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -956,6 +989,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::sdo2024.sdo2024': ApiSdo2024Sdo2024;
+      'api::sdo2025.sdo2025': ApiSdo2025Sdo2025;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "sdo2024s",
+  "collectionName": "sdo2025s",
   "info": {
-    "singularName": "sdo2024",
-    "pluralName": "sdo2024s",
-    "displayName": "sdo2024"
+    "singularName": "sdo2025",
+    "pluralName": "sdo2025s",
+    "displayName": "sdo2025"
   },
   "options": {
     "draftAndPublish": true
@@ -21,16 +21,12 @@
       "component": "hero.hero",
       "repeatable": false
     },
-    "date": {
-      "type": "string"
-    },
-    "place": {
-      "type": "string"
-    },
-    "time": {
-      "type": "string"
-    },
     "Blocks": {
+      "type": "component",
+      "component": "block.blocks",
+      "repeatable": true
+    },
+    "Kabupaten": {
       "type": "component",
       "component": "block.blocks",
       "repeatable": true
@@ -39,16 +35,6 @@
       "type": "component",
       "component": "footer.footer",
       "repeatable": false
-    },
-    "address": {
-      "type": "component",
-      "component": "address.address",
-      "repeatable": true
-    },
-    "Kabupaten": {
-      "type": "component",
-      "component": "kabupaten.kabupaten",
-      "repeatable": true
     }
   }
 }
