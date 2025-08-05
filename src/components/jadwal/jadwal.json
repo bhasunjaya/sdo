@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_jadwal_jadwals",
+  "info": {
+    "displayName": "Jadwal",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tanggal": {
+      "type": "string"
+    },
+    "acara": {
+      "type": "component",
+      "component": "block.blocks",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

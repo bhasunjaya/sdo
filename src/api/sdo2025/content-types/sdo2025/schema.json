@@ -36,6 +36,18 @@
       "component": "block.blocks",
       "repeatable": true
     },
+    "Jadwal": {
+      "type": "component",
+      "component": "jadwal.jadwal",
+      "repeatable": false
+    },
+    "Gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "Footer": {
       "type": "component",
       "component": "footer.footer",

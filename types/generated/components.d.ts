@@ -69,6 +69,19 @@ export interface HeroHero extends Struct.ComponentSchema {
   };
 }
 
+export interface JadwalJadwal extends Struct.ComponentSchema {
+  collectionName: 'components_jadwal_jadwals';
+  info: {
+    displayName: 'Jadwal';
+    icon: 'globe';
+  };
+  attributes: {
+    acara: Schema.Attribute.Component<'block.blocks', true>;
+    tanggal: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface KabupatenKabupaten extends Struct.ComponentSchema {
   collectionName: 'components_kabupaten_kabupatens';
   info: {
@@ -112,6 +125,7 @@ declare module '@strapi/strapi' {
       'footer.footer': FooterFooter;
       'header.header': HeaderHeader;
       'hero.hero': HeroHero;
+      'jadwal.jadwal': JadwalJadwal;
       'kabupaten.kabupaten': KabupatenKabupaten;
       'navlink.navbar-link': NavlinkNavbarLink;
       'socmed.social-media': SocmedSocialMedia;

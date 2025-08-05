@@ -462,8 +462,10 @@ export interface ApiSdo2025Sdo2025 extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Footer: Schema.Attribute.Component<'footer.footer', false>;
+    Gallery: Schema.Attribute.Media<'images', true>;
     Header: Schema.Attribute.Component<'header.header', false>;
     Hero: Schema.Attribute.Component<'hero.hero', false>;
+    Jadwal: Schema.Attribute.Component<'jadwal.jadwal', false>;
     Kabupaten: Schema.Attribute.Component<'block.blocks', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
