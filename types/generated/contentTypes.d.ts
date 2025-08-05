@@ -471,6 +471,7 @@ export interface ApiSdo2025Sdo2025 extends Struct.SingleTypeSchema {
       'api::sdo2025.sdo2025'
     > &
       Schema.Attribute.Private;
+    Pembicara: Schema.Attribute.Component<'block.blocks', true>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

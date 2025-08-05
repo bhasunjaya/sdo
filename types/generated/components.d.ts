@@ -17,6 +17,7 @@ export interface BlockBlocks extends Struct.ComponentSchema {
     displayName: 'Blocks';
   };
   attributes: {
+    active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     content: Schema.Attribute.Text;
     cover: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;

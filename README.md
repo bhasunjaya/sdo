@@ -1,19 +1,10 @@
 # README
 
 ## API
-Header
-Hero
-Blocks
-
-
-SDO
----- header - Component (Header)
----- Hero - Component (Hero)
----- date - Text
----- place - Text
----- time  - Text
----- Blocks - Repeateable Component (Blocks)
----- Footer
+```sh
+# use node v20 
+npm run develop
+```
 
 
 

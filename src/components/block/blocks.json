@@ -20,6 +20,10 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
     }
   },
   "config": {}

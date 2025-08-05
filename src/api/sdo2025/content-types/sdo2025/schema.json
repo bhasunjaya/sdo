@@ -31,6 +31,11 @@
       "component": "block.blocks",
       "repeatable": true
     },
+    "Pembicara": {
+      "type": "component",
+      "component": "block.blocks",
+      "repeatable": true
+    },
     "Footer": {
       "type": "component",
       "component": "footer.footer",
