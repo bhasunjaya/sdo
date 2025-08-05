@@ -9,40 +9,79 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "Header": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "header.header",
       "repeatable": false
     },
     "Hero": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "hero.hero",
       "repeatable": false
     },
     "Blocks": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "block.blocks",
       "repeatable": true
     },
     "Kabupaten": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "block.blocks",
       "repeatable": true
     },
     "Pembicara": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "block.blocks",
       "repeatable": true
     },
     "Jadwal": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "jadwal.jadwal",
       "repeatable": false
     },
     "Gallery": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "multiple": true,
       "allowedTypes": [
         "images"
@@ -50,6 +89,11 @@
     },
     "Footer": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "footer.footer",
       "repeatable": false
     }

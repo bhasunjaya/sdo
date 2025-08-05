@@ -456,24 +456,68 @@ export interface ApiSdo2025Sdo2025 extends Struct.SingleTypeSchema {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    Blocks: Schema.Attribute.Component<'block.blocks', true>;
+    Blocks: Schema.Attribute.Component<'block.blocks', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Footer: Schema.Attribute.Component<'footer.footer', false>;
-    Gallery: Schema.Attribute.Media<'images', true>;
-    Header: Schema.Attribute.Component<'header.header', false>;
-    Hero: Schema.Attribute.Component<'hero.hero', false>;
-    Jadwal: Schema.Attribute.Component<'jadwal.jadwal', false>;
-    Kabupaten: Schema.Attribute.Component<'block.blocks', true>;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    Footer: Schema.Attribute.Component<'footer.footer', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Gallery: Schema.Attribute.Media<'images', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Header: Schema.Attribute.Component<'header.header', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Hero: Schema.Attribute.Component<'hero.hero', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Jadwal: Schema.Attribute.Component<'jadwal.jadwal', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Kabupaten: Schema.Attribute.Component<'block.blocks', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::sdo2025.sdo2025'
-    > &
-      Schema.Attribute.Private;
-    Pembicara: Schema.Attribute.Component<'block.blocks', true>;
+    >;
+    Pembicara: Schema.Attribute.Component<'block.blocks', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
