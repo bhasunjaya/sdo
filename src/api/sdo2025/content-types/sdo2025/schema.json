@@ -97,7 +97,7 @@
         }
       },
       "component": "jadwal.jadwal",
-      "repeatable": false
+      "repeatable": true
     },
     "Gallery": {
       "type": "media",

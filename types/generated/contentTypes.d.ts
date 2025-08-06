@@ -501,7 +501,7 @@ export interface ApiSdo2025Sdo2025 extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
-    Jadwal: Schema.Attribute.Component<'jadwal.jadwal', false> &
+    Jadwal: Schema.Attribute.Component<'jadwal.jadwal', true> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
