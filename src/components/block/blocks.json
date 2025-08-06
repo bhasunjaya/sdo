@@ -8,9 +8,6 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "text"
-    },
     "to": {
       "type": "string"
     },
@@ -25,8 +22,8 @@
       "type": "boolean",
       "default": true
     },
-    "body": {
-      "type": "blocks"
+    "text": {
+      "type": "richtext"
     }
   },
   "config": {}
